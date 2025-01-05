@@ -1,0 +1,18 @@
+import { render, screen } from '@testing-library/react'
+
+import {{pascalCase name}} from '.'
+
+describe('
+<{{pascalCase name}} />', () => {
+it('should render the heading', () => {
+//renderizar o component
+const { container } = render(
+<{{pascalCase name}} />)
+
+//buscar o elemento e verificar a existência dele
+expect(screen.getByRole('heading', { name: /{{pascalCase name}}/i })).toBeInTheDocument()
+
+//gerar snapshot
+expect(container.firstChild).toMatchSnapshot()
+})
+})
