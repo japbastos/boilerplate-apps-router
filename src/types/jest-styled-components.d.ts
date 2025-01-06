@@ -1,6 +1,7 @@
 // Types provided from the official repo:
 // https://github.com/styled-components/jest-styled-components/blob/master/typings/index.d.ts
 /* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-wrapper-object-types */
 
 import { NewPlugin } from 'pretty-format'
 import { css } from 'styled-components'
